@@ -48,7 +48,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push chugague/docker-graphql:NEW_VERSION
+        docker push chugague/docker-graphql:$NEW_VERSION
         docker push chugague/docker-graphql
         
 
