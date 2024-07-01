@@ -26,7 +26,7 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t chugague/docker-graphql:0.0.2 .
-        docker build chugague/docker-graphql .
+        docker build -t chugague/docker-graphql .
         
 
     - name: Verify Docker image
